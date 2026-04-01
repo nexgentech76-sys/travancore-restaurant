@@ -3,816 +3,1205 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Travancore Restaurant UAE | Premium Indian Restaurant</title>
-  <meta name="description" content="Travancore Restaurant UAE - premium Indian and Kerala restaurant with dine-in, takeaway, home delivery, WhatsApp order, food gallery, customer reviews, contact details, and Google Maps location." />
-  <meta name="keywords" content="Travancore Restaurant UAE, Indian restaurant UAE, Kerala restaurant Abu Dhabi, home delivery, takeaway, WhatsApp order, family restaurant" />
+  <title>Travancore Restaurant | Gayathy Mall, Al Ruways, Abu Dhabi, UAE</title>
+  <meta
+    name="description"
+    content="Travancore Restaurant at Gayathy Mall, Al Ruways, Abu Dhabi, UAE. Delicious Indian, Arabic, Chinese and Continental food with takeaway, party orders and home delivery."
+  />
+  <meta name="theme-color" content="#0a78c9" />
 
   <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
+    :root {
+      --blue: #0a78c9;
+      --blue-dark: #0868af;
+      --gold: #e0a300;
+      --gold-light: #ffd76a;
+      --green: #25d366;
+      --green-dark: #21bf5a;
+      --text: #222;
+      --text-soft: #666;
+      --white: #ffffff;
+      --bg: #f7f3ec;
+      --border: #eadfcb;
+      --shadow: 0 16px 34px rgba(0, 0, 0, 0.06);
+      --radius: 24px;
+      --transition: 0.28s ease;
     }
 
-    html{
-      scroll-behavior:smooth;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    body{
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
       font-family: Arial, sans-serif;
-      background:#fffaf4;
-      color:#2b2b2b;
-      line-height:1.6;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
     }
 
-    a{
-      text-decoration:none;
-      color:inherit;
+    img {
+      display: block;
+      max-width: 100%;
     }
 
-    img{
-      max-width:100%;
-      display:block;
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
-    .container{
-      width:90%;
-      max-width:1200px;
-      margin:auto;
+    button {
+      font: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
     }
 
-    header{
-      position:sticky;
-      top:0;
-      z-index:999;
-      background:rgba(255,255,255,0.97);
-      box-shadow:0 4px 16px rgba(0,0,0,0.08);
+    .container {
+      width: min(90%, 1220px);
+      margin: 0 auto;
     }
 
-    .navbar{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      padding:14px 0;
-      gap:20px;
+    .blue {
+      color: var(--blue);
     }
 
-    .logo{
-      display:flex;
-      align-items:center;
-      gap:14px;
+    .yellow {
+      color: var(--gold);
     }
 
-    .logo img{
-      width:64px;
-      height:64px;
-      object-fit:cover;
-      border-radius:50%;
-      background:#fff;
-      padding:3px;
-      border:2px solid #f1c27b;
-      box-shadow:0 4px 10px rgba(0,0,0,0.06);
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.86);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
     }
 
-    .logo-text h1{
-      font-size:31px;
-      color:#b22222;
-      line-height:1.05;
-      font-weight:700;
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 14px 0;
     }
 
-    .logo-text span{
-      font-size:13px;
-      color:#777;
-      text-transform:uppercase;
-      letter-spacing:1px;
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      min-width: 0;
     }
 
-    .menu-toggle{
-      display:none;
-      font-size:28px;
-      background:none;
-      border:none;
-      cursor:pointer;
-      color:#b22222;
+    .logo img {
+      width: 96px;
+      height: auto;
+      object-fit: contain;
+      flex-shrink: 0;
+      border-radius: 0;
+      background: transparent;
+      border: none;
+      box-shadow: none;
     }
 
-    nav{
-      display:flex;
-      gap:22px;
-      flex-wrap:wrap;
-      align-items:center;
+    .logo-text h1 {
+      font-size: 38px;
+      line-height: 1;
+      font-weight: 800;
+      white-space: nowrap;
     }
 
-    nav a{
-      color:#2b2b2b;
-      font-size:15px;
-      font-weight:600;
-      transition:0.3s;
+    .logo-text p {
+      margin-top: 8px;
+      font-size: 12px;
+      color: var(--text-soft);
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
-    nav a:hover{
-      color:#d35400;
+    .menu-toggle {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 14px;
+      border: 1px solid #d9d9d9;
+      border-radius: 12px;
+      background: var(--white);
+      color: var(--blue);
+      font-size: 20px;
+      font-weight: 700;
     }
 
-    .hero{
-      min-height:92vh;
-      display:flex;
-      align-items:center;
+    nav {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    nav a {
+      position: relative;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      transition: var(--transition);
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--blue), var(--gold));
+      transition: width var(--transition);
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      color: var(--white);
       background:
-        linear-gradient(to right, rgba(255,250,244,0.90), rgba(255,250,244,0.62)),
-        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+        linear-gradient(to right, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.40)),
+        url("restaurant-bg.jpg") center/cover no-repeat;
     }
 
-    .hero-content{
-      max-width:720px;
-      padding:90px 0;
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at top left, rgba(10, 120, 201, 0.22), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(224, 163, 0, 0.18), transparent 30%);
+      pointer-events: none;
     }
 
-    .tag{
-      display:inline-block;
-      background:#fff;
-      color:#b22222;
-      border:1px solid #f0d7b3;
-      padding:10px 18px;
-      border-radius:999px;
-      margin-bottom:20px;
-      font-size:14px;
-      font-weight:700;
-      box-shadow:0 6px 16px rgba(0,0,0,0.05);
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 790px;
+      padding: 100px 0;
+      animation: fadeUp 0.8s ease;
     }
 
-    .hero h2{
-      font-size:62px;
-      line-height:1.04;
-      margin-bottom:18px;
-      color:#222;
+    .hero-badge {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.08);
+      font-size: 14px;
+      font-weight: 700;
     }
 
-    .hero h2 span{
-      color:#d35400;
+    .hero h2 {
+      margin-bottom: 18px;
+      font-size: 62px;
+      line-height: 1.03;
+      letter-spacing: -1px;
+      font-weight: 800;
+      text-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
     }
 
-    .hero p{
-      font-size:20px;
-      color:#444;
-      margin-bottom:28px;
-      max-width:650px;
+    .hero h2 .yellow {
+      color: #ffd15c;
     }
 
-    .hero-points{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-      margin-bottom:30px;
+    .hero p {
+      max-width: 720px;
+      margin-bottom: 26px;
+      font-size: 21px;
+      color: #f2f2f2;
+      opacity: 0.96;
+      text-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
     }
 
-    .hero-points span{
-      background:#fff;
-      color:#444;
-      padding:10px 16px;
-      border-radius:999px;
-      font-size:14px;
-      border:1px solid #f0dfc9;
-      box-shadow:0 4px 10px rgba(0,0,0,0.05);
+    .hero-points {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
     }
 
-    .btn-group{
-      display:flex;
-      gap:14px;
-      flex-wrap:wrap;
-      align-items:center;
+    .hero-points span {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.10);
     }
 
-    .btn{
-      padding:15px 28px;
-      border-radius:12px;
-      font-size:15px;
-      font-weight:700;
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      transition:0.3s ease;
-      min-width:190px;
-      min-height:54px;
-      text-align:center;
-      cursor:pointer;
+    .btn-group {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
     }
 
-    .btn-primary{
-      background:#25d366;
-      color:#ffffff !important;
-      border:none;
-      box-shadow:0 8px 20px rgba(37,211,102,0.35);
+    .btn {
+      position: relative;
+      overflow: hidden;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 180px;
+      padding: 15px 28px;
+      border-radius: 14px;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      transition: var(--transition);
+      border: 2px solid transparent;
     }
 
-    .btn-primary:hover{
-      transform:translateY(-2px);
-      background:#20b95a;
-      color:#ffffff !important;
+    .btn::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        120deg,
+        transparent 20%,
+        rgba(255, 255, 255, 0.24) 50%,
+        transparent 80%
+      );
+      transform: translateX(-130%);
+      transition: transform 0.55s ease;
     }
 
-    .btn-secondary{
-      background:#f4c27b;
-      color:#5a2d0c;
-      border:none;
-      box-shadow:0 8px 20px rgba(244,194,123,0.30);
+    .btn:hover::before {
+      transform: translateX(130%);
     }
 
-    .btn-secondary:hover{
-      transform:translateY(-2px);
-      background:#e9b15f;
-      color:#4a2208;
+    .btn:hover {
+      transform: translateY(-3px);
     }
 
-    .btn-outline{
-      background:#ffffff;
-      color:#b22222;
-      border:2px solid #b22222;
-      box-shadow:0 8px 20px rgba(178,34,34,0.08);
+    .btn-green {
+      background: linear-gradient(135deg, #2bdd72, var(--green-dark));
+      color: #fff !important;
+      border-color: var(--green);
+      box-shadow: 0 10px 24px rgba(37, 211, 102, 0.35);
     }
 
-    .btn-outline:hover{
-      background:#b22222;
-      color:#ffffff;
-      transform:translateY(-2px);
+    .btn-green:hover {
+      box-shadow:
+        0 0 18px rgba(37, 211, 102, 0.6),
+        0 18px 32px rgba(37, 211, 102, 0.45);
     }
 
-    section{
-      padding:85px 0;
+    .btn-blue {
+      background: #0a78c9;
+      color: #ffffff !important;
+      border: 2px solid #0868af;
+      box-shadow: 0 10px 22px rgba(10, 120, 201, 0.35);
     }
 
-    .section-title{
-      text-align:center;
-      margin-bottom:42px;
+    .btn-blue,
+    .btn-blue * {
+      color: #fff !important;
     }
 
-    .section-title h3{
-      font-size:40px;
-      color:#b22222;
-      margin-bottom:10px;
+    .btn-blue:hover {
+      background: #0868af;
+      box-shadow:
+        0 0 12px rgba(10, 120, 201, 0.6),
+        0 16px 30px rgba(10, 120, 201, 0.45);
     }
 
-    .section-title p{
-      max-width:760px;
-      margin:auto;
-      color:#666;
-      font-size:16px;
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold-light), var(--gold));
+      color: #1d1d1d !important;
+      border-color: var(--gold);
+      box-shadow: 0 12px 24px rgba(224, 163, 0, 0.28);
+    }
+
+    .btn-gold:hover {
+      box-shadow:
+        0 0 18px rgba(224, 163, 0, 0.6),
+        0 18px 32px rgba(224, 163, 0, 0.42);
+    }
+
+    .btn-outline-blue {
+      background: rgba(255, 255, 255, 0.10);
+      color: #fff !important;
+      border: 2px solid rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
+    }
+
+    .btn-outline-blue:hover {
+      background: var(--blue);
+      color: #fff !important;
+      border-color: var(--blue);
+      box-shadow: 0 18px 30px rgba(10, 120, 201, 0.34);
+    }
+
+    section {
+      padding: 82px 0;
+      animation: fadeUp 0.8s ease;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h3 {
+      font-size: 42px;
+      color: var(--blue);
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+
+    .section-title h3 span {
+      color: var(--gold);
+    }
+
+    .section-title p {
+      max-width: 760px;
+      margin: auto;
+      color: var(--text-soft);
+      font-size: 16px;
     }
 
     .about-grid,
-    .contact-grid,
-    .review-grid,
-    .gallery-grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:26px;
-      align-items:stretch;
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: stretch;
     }
 
-    .card{
-      background:#fff;
-      border:1px solid #f0dfc9;
-      border-radius:20px;
-      padding:30px;
-      box-shadow:0 10px 24px rgba(0,0,0,0.06);
+    .card {
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid rgba(234, 223, 203, 0.95);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: var(--transition);
     }
 
-    .card h4{
-      font-size:24px;
-      color:#b22222;
-      margin-bottom:16px;
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow:
+        0 0 0 1px rgba(10, 120, 201, 0.08),
+        0 20px 40px rgba(0, 0, 0, 0.08);
     }
 
-    .features{
-      display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:18px;
-      margin-top:30px;
+    .card h4 {
+      font-size: 26px;
+      color: var(--blue);
+      margin-bottom: 14px;
     }
 
-    .feature-box{
-      background:#fff;
-      border:1px solid #f0dfc9;
-      border-radius:18px;
-      padding:24px;
-      text-align:center;
-      box-shadow:0 8px 20px rgba(0,0,0,0.05);
+    .features {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 26px;
     }
 
-    .feature-box h5{
-      color:#b22222;
-      font-size:19px;
-      margin-bottom:10px;
+    .feature-box {
+      background: rgba(255, 255, 255, 0.90);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+      text-align: center;
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.04);
+      transition: var(--transition);
     }
 
-    .feature-box p{
-      color:#666;
-      font-size:14px;
+    .feature-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 28px rgba(0, 0, 0, 0.08);
     }
 
-    .menu-list{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:20px;
-      margin-top:10px;
+    .feature-box h5 {
+      color: var(--blue);
+      font-size: 18px;
+      margin-bottom: 8px;
     }
 
-    .menu-item{
-      background:linear-gradient(180deg,#fff,#fff7ef);
-      border:1px solid #f0dfc9;
-      border-radius:18px;
-      padding:26px;
-      text-align:center;
-      box-shadow:0 10px 22px rgba(0,0,0,0.05);
+    .feature-box p {
+      color: var(--text-soft);
+      font-size: 14px;
     }
 
-    .menu-item h4{
-      color:#b22222;
-      margin-bottom:12px;
-      font-size:22px;
+    .highlight-strip {
+      margin-top: 26px;
+      background: linear-gradient(135deg, #fff4d1, #ffe39c);
+      border: 1px solid #efd488;
+      border-radius: 20px;
+      padding: 24px;
+      text-align: center;
+      box-shadow: 0 14px 26px rgba(224, 163, 0, 0.10);
     }
 
-    .menu-item p{
-      color:#666;
-      font-size:15px;
+    .highlight-strip strong {
+      display: block;
+      color: var(--blue);
+      font-size: 24px;
+      margin-bottom: 8px;
     }
 
-    .gallery-grid{
-      grid-template-columns:repeat(3,1fr);
+    .specials-wrap {
+      display: grid;
+      gap: 28px;
     }
 
-    .gallery-card{
-      background:#fff;
-      border:1px solid #f0dfc9;
-      border-radius:18px;
-      overflow:hidden;
-      box-shadow:0 10px 22px rgba(0,0,0,0.05);
+    .special-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.05);
+      transition: var(--transition);
     }
 
-    .gallery-card img{
-      width:100%;
-      height:260px;
-      object-fit:cover;
-      background:#f8f1e7;
+    .special-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 38px rgba(0, 0, 0, 0.08);
     }
 
-    .gallery-text{
-      padding:18px;
-      text-align:center;
+    .special-card.reverse .special-image {
+      order: 2;
     }
 
-    .gallery-text h4{
-      color:#b22222;
-      margin-bottom:8px;
-      font-size:22px;
+    .special-card.reverse .special-text {
+      order: 1;
     }
 
-    .gallery-text p{
-      color:#666;
-      font-size:14px;
+    .special-image img {
+      width: 100%;
+      height: 100%;
+      min-height: 320px;
+      object-fit: cover;
+      background: #f5efe4;
     }
 
-    .review-card{
-      background:#fff;
-      border:1px solid #f0dfc9;
-      border-radius:18px;
-      padding:24px;
-      box-shadow:0 8px 20px rgba(0,0,0,0.05);
+    .special-text {
+      padding: 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
-    .stars{
-      color:#f5b301;
-      font-size:22px;
-      margin-bottom:10px;
+    .special-badge {
+      display: inline-block;
+      width: fit-content;
+      padding: 8px 14px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+      font-size: 13px;
+      font-weight: 800;
+      background: #eef6fd;
+      color: var(--blue);
+      border: 1px solid #cfe3f7;
+      box-shadow: 0 8px 16px rgba(10, 120, 201, 0.08);
     }
 
-    .review-name{
-      margin-top:12px;
-      font-weight:700;
-      color:#b22222;
+    .special-text h4 {
+      font-size: 38px;
+      line-height: 1.05;
+      color: var(--blue);
+      margin-bottom: 12px;
+      font-weight: 800;
     }
 
-    .contact-info p{
-      margin-bottom:12px;
-      color:#444;
-      font-size:17px;
+    .special-text h4 span {
+      color: var(--gold);
     }
 
-    .contact-info a{
-      color:#0aa06e;
-      font-weight:600;
+    .special-text p {
+      color: #555;
+      margin-bottom: 14px;
+      font-size: 16px;
     }
 
-    .contact-actions{
-      margin-top:24px;
+    .special-text ul {
+      padding-left: 20px;
+      color: #444;
+      font-size: 16px;
     }
 
-    .map-box iframe{
-      width:100%;
-      height:360px;
-      border:0;
-      border-radius:18px;
+    .special-text li {
+      margin-bottom: 8px;
     }
 
-    .map-link{
-      margin-top:16px;
-      text-align:center;
+    .contact-info p {
+      margin-bottom: 12px;
+      font-size: 17px;
+      color: #444;
     }
 
-    .highlight-strip{
-      margin-top:30px;
-      background:linear-gradient(135deg,#fff3e6,#ffe2ba);
-      border:1px solid #f0dfc9;
-      border-radius:18px;
-      padding:24px;
-      text-align:center;
-      color:#444;
-      box-shadow:0 8px 18px rgba(0,0,0,0.04);
+    .contact-info a {
+      color: var(--blue);
+      font-weight: 700;
     }
 
-    .floating-whatsapp{
-      position:fixed;
-      right:18px;
-      bottom:18px;
-      background:#25d366;
-      color:#fff;
-      padding:14px 18px;
-      border-radius:999px;
-      font-weight:700;
-      box-shadow:0 10px 24px rgba(0,0,0,0.18);
-      z-index:999;
+    .contact-actions {
+      margin-top: 20px;
     }
 
-    footer{
-      text-align:center;
-      padding:28px 16px;
-      background:#b22222;
-      color:#fff;
-      margin-top:20px;
+    .review-box {
+      margin-top: 22px;
+      padding: 18px 20px;
+      border-radius: 16px;
+      background: #fff8e8;
+      border: 1px solid #efcf7c;
+      box-shadow: 0 10px 22px rgba(224, 163, 0, 0.08);
     }
 
-    @media (max-width: 992px){
-      .features{
-        grid-template-columns:repeat(2,1fr);
+    .review-box h5 {
+      color: var(--blue);
+      font-size: 19px;
+      margin-bottom: 8px;
+      font-weight: 800;
+    }
+
+    .stars {
+      color: #f4b400;
+      font-size: 24px;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+      text-shadow: 0 0 10px rgba(244, 180, 0, 0.18);
+    }
+
+    .review-box p {
+      color: var(--text-soft);
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .review-link {
+      color: var(--blue);
+      font-weight: 700;
+    }
+
+    .map-box iframe {
+      width: 100%;
+      height: 360px;
+      border: 0;
+      border-radius: 18px;
+    }
+
+    .map-link {
+      margin-top: 16px;
+      text-align: center;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      background: linear-gradient(135deg, #2bdd72, #21bf5a);
+      color: #fff;
+      padding: 14px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      box-shadow: 0 14px 28px rgba(37, 211, 102, 0.34);
+      z-index: 999;
+      transition: var(--transition);
+    }
+
+    .floating-whatsapp:hover {
+      transform: translateY(-3px) scale(1.04);
+      box-shadow: 0 20px 34px rgba(37, 211, 102, 0.45);
+    }
+
+    .floating-whatsapp::after {
+      content: " Chat";
+      margin-left: 4px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 26px 16px;
+      background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+      color: #fff;
+      margin-top: 20px;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 992px) {
+      .features {
+        grid-template-columns: repeat(2, 1fr);
       }
 
-      .menu-list{
-        grid-template-columns:repeat(2,1fr);
+      .hero h2 {
+        font-size: 46px;
       }
 
-      .review-grid,
-      .gallery-grid{
-        grid-template-columns:1fr;
+      .special-card {
+        grid-template-columns: 1fr;
       }
 
-      .hero h2{
-        font-size:46px;
+      .special-card.reverse .special-image,
+      .special-card.reverse .special-text {
+        order: unset;
       }
     }
 
-    @media (max-width: 768px){
-      .navbar{
-        flex-wrap:wrap;
+    @media (max-width: 768px) {
+      .navbar {
+        flex-wrap: wrap;
       }
 
-      .menu-toggle{
-        display:block;
+      .menu-toggle {
+        display: inline-flex;
       }
 
-      nav{
-        display:none;
-        width:100%;
-        flex-direction:column;
-        align-items:flex-start;
-        padding-top:10px;
+      nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        padding-top: 12px;
       }
 
-      nav.show{
-        display:flex;
+      nav.show {
+        display: flex;
       }
 
-      .hero{
-        min-height:auto;
-        background:
-          linear-gradient(to right, rgba(255,250,244,0.96), rgba(255,250,244,0.88)),
-          url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+      .hero h2 {
+        font-size: 34px;
       }
 
-      .hero h2{
-        font-size:34px;
-      }
-
-      .hero p{
-        font-size:16px;
+      .hero p {
+        font-size: 16px;
       }
 
       .about-grid,
       .contact-grid,
-      .features,
-      .menu-list,
-      .gallery-grid,
-      .review-grid{
-        grid-template-columns:1fr;
+      .features {
+        grid-template-columns: 1fr;
       }
 
-      .logo-text h1{
-        font-size:24px;
+      .logo-text h1 {
+        font-size: 28px;
+        white-space: normal;
       }
 
-      .btn{
-        min-width:100%;
+      .btn {
+        min-width: 100%;
+      }
+
+      .special-text {
+        padding: 24px;
+      }
+
+      .special-text h4 {
+        font-size: 29px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .logo {
+        align-items: flex-start;
+      }
+
+      .logo img {
+        width: 74px;
+      }
+
+      .logo-text h1 {
+        font-size: 22px;
+      }
+
+      .logo-text p {
+        font-size: 10px;
+        letter-spacing: 0.6px;
+      }
+
+      nav a {
+        font-size: 14px;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-content {
+        padding: 70px 0;
+      }
+
+      .hero h2 {
+        font-size: 30px;
+        line-height: 1.08;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .hero-points span {
+        font-size: 13px;
+        padding: 8px 12px;
+      }
+
+      .section-title h3 {
+        font-size: 30px;
+      }
+
+      .card,
+      .special-text {
+        padding: 22px;
+      }
+
+      .map-box iframe {
+        height: 280px;
+      }
+
+      .floating-whatsapp {
+        right: 12px;
+        bottom: 12px;
+        padding: 12px 16px;
       }
     }
   </style>
 </head>
 <body>
-
   <header>
     <div class="container navbar">
       <div class="logo">
-        <img src="logo.png" alt="Travancore Restaurant Logo">
+        <img src="restaurantlogo.png" alt="Travancore Restaurant Logo" />
         <div class="logo-text">
-          <h1>Travancore Restaurant</h1>
-          <span>UAE Indian Restaurant</span>
+          <h1><span class="blue">Travancore</span> <span class="yellow">Restaurant</span></h1>
+          <p>Gayathy Mall, Al Ruways, Abu Dhabi, UAE</p>
         </div>
       </div>
 
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Toggle Menu"
+        aria-expanded="false"
+        aria-controls="mainNav"
+      >
+        ☰
+      </button>
 
-      <nav id="mobileMenu">
+      <nav id="mainNav" aria-label="Main navigation">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#highlights">Highlights</a>
-        <a href="#menu">Menu</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#reviews">Reviews</a>
+        <a href="#specials">Specials</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero" id="home">
-    <div class="container">
-      <div class="hero-content">
-        <div class="tag">Welcome to Travancore Restaurant UAE</div>
-        <h2>Delicious <span>Indian & Kerala</span> Food Experience</h2>
-        <p>
-          Enjoy authentic taste, family dining, takeaway, home delivery,
-          and quick WhatsApp ordering. Fresh food, warm service, and memorable flavors for every customer.
-        </p>
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">Welcome to Travancore Restaurant</div>
 
-        <div class="hero-points">
-          <span>Family Friendly</span>
-          <span>Kerala Specials</span>
-          <span>Indian Dishes</span>
-          <span>Takeaway</span>
-          <span>Home Delivery</span>
-          <span>Fast WhatsApp Order</span>
-        </div>
+          <h2>
+            Delicious Food –
+            <span class="yellow">Indian, Arabic, Chinese</span> &
+            Continental
+          </h2>
 
-        <div class="btn-group">
-          <a class="btn btn-primary" href="https://wa.me/971525581934" target="_blank">WhatsApp Now</a>
-          <a class="btn btn-secondary" href="tel:+971525581934">Call Restaurant</a>
-          <a class="btn btn-outline" href="#contact">View Map</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="container">
-      <div class="section-title">
-        <h3>About Travancore Restaurant</h3>
-        <p>
-          Travancore Restaurant is a premium Indian and Kerala restaurant in UAE,
-          offering a warm atmosphere, fresh dishes, takeaway service, and home delivery.
-        </p>
-      </div>
-
-      <div class="about-grid">
-        <div class="card">
-          <h4>Why Choose Us</h4>
           <p>
-            We serve delicious Indian and Kerala food with quality ingredients,
-            clean presentation, friendly service, and a comfortable dining atmosphere
-            for families, friends, and visitors.
+            Enjoy delicious Indian, Arabic, Chinese and Continental dishes with
+            family dining, takeaway, party orders and fast home delivery.
+          </p>
+
+          <div class="hero-points">
+            <span>Indian Food</span>
+            <span>Arabic Food</span>
+            <span>Chinese Food</span>
+            <span>Continental</span>
+            <span>Party Orders</span>
+            <span>Home Delivery</span>
+          </div>
+
+          <div class="btn-group">
+            <a
+              class="btn btn-green"
+              href="https://wa.me/971549930146"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp Now
+            </a>
+
+            <a class="btn btn-blue" href="tel:+97124418608">
+              Call Restaurant
+            </a>
+
+            <a class="btn btn-gold" href="#specials">
+              View Specials
+            </a>
+
+            <a
+              class="btn btn-outline-blue"
+              href="https://www.google.com/maps/place/23%C2%B054'39.5%22N+52%C2%B048'08.8%22E/@23.9109596,52.7998726,17z/data=!3m1!4b1!4m4!3m3!8m2!3d23.9109596!4d52.8024475?hl=en&entry=ttu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Location
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-title">
+          <h3><span>About</span> Travancore Restaurant</h3>
+          <p>
+            Travancore Restaurant offers quality Indian, Arabic, Chinese and Continental food
+            with good taste, neat service and a clean family-friendly atmosphere.
           </p>
         </div>
 
-        <div class="card">
-          <h4>Restaurant Info</h4>
-          <div class="contact-info">
-            <p><strong>Restaurant:</strong> Travancore Restaurant L.L.C</p>
-            <p><strong>Category:</strong> UAE Indian Restaurant</p>
-            <p><strong>Phone:</strong> <a href="tel:+971525581934">+971 52 558 1934</a></p>
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/971525581934" target="_blank">+971 52 558 1934</a></p>
+        <div class="about-grid">
+          <div class="card">
+            <h4>Why Choose Us</h4>
+            <p>
+              Fresh food, neat service, family dining, takeaway, party orders and
+              quick home delivery. We serve popular dishes loved by customers in
+              Al Ruways and nearby areas.
+            </p>
+          </div>
+
+          <div class="card">
+            <h4>Restaurant Information</h4>
+            <div class="contact-info">
+              <p><strong>Name:</strong> Travancore Restaurant</p>
+              <p><strong>Food:</strong> Indian, Arabic, Chinese & Continental</p>
+              <p><strong>Service:</strong> Dine-in, Takeaway, Party Orders, Home Delivery</p>
+              <p><strong>Location:</strong> Gayathy Mall, Al Ruways, Abu Dhabi, UAE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights">
+      <div class="container">
+        <div class="section-title">
+          <h3><span>Restaurant</span> Highlights</h3>
+          <p>
+            Professional food focus with customer favorites, quality service and fast ordering support.
+          </p>
+        </div>
+
+        <div class="features">
+          <div class="feature-box">
+            <h5>Indian Dishes</h5>
+            <p>Traditional Indian food and customer favorite meals.</p>
+          </div>
+          <div class="feature-box">
+            <h5>Arabic Specials</h5>
+            <p>Arabic-style grill, shawarma and hot favorite dishes.</p>
+          </div>
+          <div class="feature-box">
+            <h5>Chinese Favorites</h5>
+            <p>Popular Chinese dishes loved by dine-in and takeaway customers.</p>
+          </div>
+          <div class="feature-box">
+            <h5>Delivery & Orders</h5>
+            <p>Takeaway, WhatsApp orders, party orders and home delivery.</p>
+          </div>
+        </div>
+
+        <div class="highlight-strip">
+          <strong>Travancore Restaurant</strong>
+          Gayathy Mall, Al Ruways, Abu Dhabi, UAE |
+          Indian | Arabic | Chinese | Continental | Takeaway | Party Orders | Home Delivery
+        </div>
+      </div>
+    </section>
+
+    <section id="specials">
+      <div class="container">
+        <div class="section-title">
+          <h3><span>Special</span> Food Highlights</h3>
+          <p>
+            Attractive one-page food showcase with clear cards and professional presentation.
+          </p>
+        </div>
+
+        <div class="specials-wrap">
+          <article class="special-card">
+            <div class="special-image">
+              <img src="sadhya.jpg" alt="Indian Food Specials" loading="lazy" />
+            </div>
+            <div class="special-text">
+              <span class="special-badge">Popular Section</span>
+              <h4><span>Indian</span> Food Specials</h4>
+              <p>Traditional Indian-style meals and customer favorite dishes.</p>
+              <ul>
+                <li>Indian Thali</li>
+                <li>Special meals</li>
+                <li>Family food orders</li>
+                <li>Bulk food support</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="special-card reverse">
+            <div class="special-image">
+              <img src="biriyani.jpg" alt="Biriyani Specials" loading="lazy" />
+            </div>
+            <div class="special-text">
+              <span class="special-badge">Best Seller</span>
+              <h4><span>Biriyani</span> Specials</h4>
+              <p>Rich aroma, premium rice and signature restaurant flavor.</p>
+              <ul>
+                <li>Chicken Biriyani</li>
+                <li>Mutton Biriyani</li>
+                <li>Beef Biriyani</li>
+                <li>Family meal packs</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="special-card">
+            <div class="special-image">
+              <img src="chinese.jpg" alt="Chinese Favorites" loading="lazy" />
+            </div>
+            <div class="special-text">
+              <span class="special-badge">Hot & Tasty</span>
+              <h4><span>Chinese</span> Favorites</h4>
+              <p>Popular dishes loved by dine-in and takeaway customers.</p>
+              <ul>
+                <li>Fried Rice</li>
+                <li>Noodles</li>
+                <li>Chilli Chicken</li>
+                <li>Chinese customer favorites</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="special-card reverse">
+            <div class="special-image">
+              <img src="juices.jpg" alt="Fresh Juices" loading="lazy" />
+            </div>
+            <div class="special-text">
+              <span class="special-badge">Refreshing Drinks</span>
+              <h4><span>Fresh</span> Juices</h4>
+              <p>Freshly prepared cool drinks for every meal and every season.</p>
+              <ul>
+                <li>Mango</li>
+                <li>Orange</li>
+                <li>Lemon Mint</li>
+                <li>Seasonal juices</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="special-card">
+            <div class="special-image">
+              <img src="shawayi.jpg" alt="Arabic Food" loading="lazy" />
+            </div>
+            <div class="special-text">
+              <span class="special-badge">Arabic Special</span>
+              <h4><span>Arabic</span> Food Favorites</h4>
+              <p>Arabic-style grilled dishes and customer favorites.</p>
+              <ul>
+                <li>Shawarma</li>
+                <li>Shawayi Chicken</li>
+                <li>Arabic Grill</li>
+                <li>Special grill dishes</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="special-card reverse">
+            <div class="special-image">
+              <img src="breakfast.jpg" alt="Continental and Breakfast" loading="lazy" />
+            </div>
+            <div class="special-text">
+              <span class="special-badge">More Specials</span>
+              <h4><span>Continental</span> & Breakfast</h4>
+              <p>More tasty items for morning service and all-day dining.</p>
+              <ul>
+                <li>Breakfast specials</li>
+                <li>Dosa & Idli items</li>
+                <li>Appam & Puttu</li>
+                <li>Extra customer favorites</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h3><span>Contact</span> & Location</h3>
+          <p>
+            Visit, call, WhatsApp or find us easily on Google Maps.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card contact-info">
+            <h4>Contact Details</h4>
+
+            <p><strong>Address:</strong> Gayathy Mall, Al Ruways, Abu Dhabi, UAE</p>
+            <p><strong>Phone:</strong> <a href="tel:+97124418608">+971 24 418 608</a></p>
+            <p>
+              <strong>WhatsApp:</strong>
+              <a
+                href="https://wa.me/971549930146"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                +971 54 993 0146
+              </a>
+            </p>
             <p><strong>Email:</strong> <a href="mailto:travancoreauh@gmail.com">travancoreauh@gmail.com</a></p>
-            <p><strong>Hours:</strong> 7:00 AM - 11:30 PM</p>
+            <p><strong>Service:</strong> Dine-in, Takeaway, Party Orders, Home Delivery</p>
+
+            <div class="review-box">
+              <h5>Google Reviews</h5>
+              <div class="stars">★★★★★ 4.8</div>
+              <p>Check our location on Google Maps and see customer reviews.</p>
+              <a
+                class="review-link"
+                href="https://www.google.com/maps/place/23%C2%B054'39.5%22N+52%C2%B048'08.8%22E/@23.9109596,52.7998726,17z/data=!3m1!4b1!4m4!3m3!8m2!3d23.9109596!4d52.8024475?hl=en&entry=ttu"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                See Reviews on Google
+              </a>
+            </div>
+
+            <div class="btn-group contact-actions">
+              <a
+                class="btn btn-green"
+                href="https://wa.me/971549930146"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Order on WhatsApp
+              </a>
+              <a class="btn btn-blue" href="tel:+97124418608">Call Now</a>
+            </div>
+          </div>
+
+          <div class="card map-box">
+            <iframe
+              src="https://www.google.com/maps?q=23.9109596,52.8024475&z=17&output=embed"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Travancore Restaurant Location Map"
+            ></iframe>
+
+            <div class="map-link">
+              <a
+                class="btn btn-gold"
+                href="https://www.google.com/maps/place/23%C2%B054'39.5%22N+52%C2%B048'08.8%22E/@23.9109596,52.7998726,17z/data=!3m1!4b1!4m4!3m3!8m2!3d23.9109596!4d52.8024475?hl=en&entry=ttu"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open Google Maps
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <section id="highlights">
-    <div class="container">
-      <div class="section-title">
-        <h3>Restaurant Highlights</h3>
-        <p>
-          A clean, colorful, premium restaurant experience for dine-in, takeaway, and delivery.
-        </p>
-      </div>
-
-      <div class="features">
-        <div class="feature-box">
-          <h5>Authentic Taste</h5>
-          <p>Classic Indian and Kerala recipes with rich flavor and aroma.</p>
-        </div>
-        <div class="feature-box">
-          <h5>Family Dining</h5>
-          <p>Comfortable atmosphere for family meals and friendly gatherings.</p>
-        </div>
-        <div class="feature-box">
-          <h5>Takeaway</h5>
-          <p>Quick takeaway service for busy customers and office lunch orders.</p>
-        </div>
-        <div class="feature-box">
-          <h5>Home Delivery</h5>
-          <p>Fast delivery support through phone and WhatsApp ordering.</p>
-        </div>
-      </div>
-
-      <div class="highlight-strip">
-        <strong>Travancore Restaurant UAE</strong> offers premium dining,
-        takeaway, home delivery, WhatsApp ordering, and warm customer service
-        in a beautiful restaurant setting.
-      </div>
-    </div>
-  </section>
-
-  <section id="menu">
-    <div class="container">
-      <div class="section-title">
-        <h3>Popular Menu Highlights</h3>
-        <p>
-          Some customer favorite dishes from our Indian and Kerala kitchen.
-        </p>
-      </div>
-
-      <div class="menu-list">
-        <div class="menu-item">
-          <h4>Breakfast Specials</h4>
-          <p>Dosa, Appam, Puttu, Idiyappam, Omelette, Tea and Coffee</p>
-        </div>
-        <div class="menu-item">
-          <h4>Lunch Favorites</h4>
-          <p>Meals, Chicken Curry, Fish Curry, Rice, Chapati and Beef Fry</p>
-        </div>
-        <div class="menu-item">
-          <h4>Dinner Bestsellers</h4>
-          <p>Biriyani, Porotta, Grill Chicken, Shawarma and Kerala Specials</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="gallery">
-    <div class="container">
-      <div class="section-title">
-        <h3>Food Gallery</h3>
-        <p>
-          Explore our delicious favorites, freshly prepared for every customer.
-        </p>
-      </div>
-
-      <div class="gallery-grid">
-        <div class="gallery-card">
-          <img src="biriyani.jpg" alt="Biriyani">
-          <div class="gallery-text">
-            <h4>Signature Biriyani</h4>
-            <p>Rich aroma, premium rice, and flavorful spices in every bite.</p>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <img src="chinese.jpg" alt="Chinese Dishes">
-          <div class="gallery-text">
-            <h4>Chinese Dishes</h4>
-            <p>Popular fried rice, noodles, and hot favorite dishes.</p>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <img src="breakfast.jpg" alt="Breakfast">
-          <div class="gallery-text">
-            <h4>Breakfast Specials</h4>
-            <p>Dosa, appam, puttu, idiyappam and fresh morning meals.</p>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <img src="shawarma.jpg" alt="Shawarma">
-          <div class="gallery-text">
-            <h4>Shawarma</h4>
-            <p>Tasty shawarma rolls prepared fresh and served hot.</p>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <img src="juices.jpg" alt="Fresh Juices">
-          <div class="gallery-text">
-            <h4>Fresh Juices</h4>
-            <p>Cool and refreshing juices for every meal and every season.</p>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <img src="alpharm.jpg" alt="Tandoori Alfaham">
-          <div class="gallery-text">
-            <h4>Tandoori Alfaham</h4>
-            <p>Juicy grilled chicken with smoky flavor and delicious taste.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="reviews">
-    <div class="container">
-      <div class="section-title">
-        <h3>Google Review Highlights</h3>
-        <p>
-          Good customer feedback builds trust and brings more visitors.
-        </p>
-      </div>
-
-      <div class="review-grid">
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>Excellent Kerala taste, good service, and very neat place for family dining.</p>
-          <div class="review-name">— Google Customer</div>
-        </div>
-
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p>Very good takeaway and quick WhatsApp support. Food quality was really nice.</p>
-          <div class="review-name">— Happy Customer</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <div class="section-title">
-        <h3>Contact & Location</h3>
-        <p>
-          Reach us easily by phone, WhatsApp, email, or Google Maps.
-        </p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="card contact-info">
-          <h4>Contact Details</h4>
-          <p><strong>Phone:</strong> <a href="tel:+971525581934">+971 52 558 1934</a></p>
-          <p><strong>WhatsApp:</strong> <a href="https://wa.me/971525581934" target="_blank">+971 52 558 1934</a></p>
-          <p><strong>Email:</strong> <a href="mailto:travancoreauh@gmail.com">travancoreauh@gmail.com</a></p>
-          <p><strong>Address:</strong> Ghayathi, Al Dhafra, Abu Dhabi, UAE</p>
-          <p><strong>Service:</strong> Dine-in, Takeaway, Home Delivery</p>
-
-          <div class="btn-group contact-actions">
-            <a class="btn btn-primary" href="https://wa.me/971525581934" target="_blank">Order on WhatsApp</a>
-            <a class="btn btn-secondary" href="tel:+971525581934">Call Restaurant</a>
-          </div>
-        </div>
-
-        <div class="card map-box">
-          <iframe
-            src="https://www.google.com/maps?q=Ghayathi%20Abu%20Dhabi%20UAE&z=13&output=embed"
-            loading="lazy"
-            allowfullscreen>
-          </iframe>
-
-          <div class="map-link">
-            <a class="btn btn-outline" href="https://maps.google.com/?q=Ghayathi,Al%20Dhafra,Abu%20Dhabi,UAE" target="_blank">Open Google Maps</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <a class="floating-whatsapp" href="https://wa.me/971525581934" target="_blank">WhatsApp</a>
+  <a
+    class="floating-whatsapp"
+    href="https://wa.me/971549930146"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp Chat"
+  >
+    WhatsApp
+  </a>
 
   <footer>
-    <p>© 2026 Travancore Restaurant UAE. All Rights Reserved.</p>
+    <p>© 2026 Travancore Restaurant. All Rights Reserved.</p>
   </footer>
 
   <script>
-    function toggleMenu() {
-      document.getElementById("mobileMenu").classList.toggle("show");
-    }
-  </script>
+    (function () {
+      const menuToggle = document.getElementById("menuToggle");
+      const mainNav = document.getElementById("mainNav");
 
+      if (!menuToggle || !mainNav) return;
+
+      function closeMenu() {
+        mainNav.classList.remove("show");
+        menuToggle.setAttribute("aria-expanded", "false");
+      }
+
+      menuToggle.addEventListener("click", function () {
+        const isOpen = mainNav.classList.toggle("show");
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      mainNav.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          if (window.innerWidth <= 768) {
+            closeMenu();
+          }
+        });
+      });
+
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 768) {
+          closeMenu();
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
