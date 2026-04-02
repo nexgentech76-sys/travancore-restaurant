@@ -3,29 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Travancore Restaurant | Gayathy Mall, Al Ruways, Abu Dhabi, UAE</title>
+
+  <title>Travancore Restaurant Abu Dhabi | Indian Arabic Chinese Restaurant in Ghayathy Al Ruways</title>
+
   <meta
     name="description"
-    content="Travancore Restaurant at Gayathy Mall, Al Ruways, Abu Dhabi, UAE. Delicious Indian, Arabic, Chinese and Continental food with takeaway, party orders and home delivery."
+    content="Travancore Restaurant in Ghayathy Mall, Al Ruways, Abu Dhabi, UAE. Enjoy Indian, Arabic, Chinese and Continental food with dine-in, takeaway, party orders and home delivery."
+  />
+  <meta
+    name="keywords"
+    content="Travancore Restaurant, Ghayathy restaurant, Al Ruways restaurant, Indian restaurant Abu Dhabi, Arabic food Al Ruways, Chinese food Ghayathy, family restaurant Ghayathy Mall, takeaway Abu Dhabi, home delivery Al Ruways"
   />
   <meta name="theme-color" content="#0a78c9" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Travancore Restaurant Abu Dhabi" />
+  <meta
+    property="og:description"
+    content="Premium Indian, Arabic, Chinese and Continental dining in Ghayathy Mall, Al Ruways, Abu Dhabi."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://travancorerestaurant.com/" />
+  <meta property="og:image" content="https://travancorerestaurant.com/restaurantlogo.png" />
+
+  <link rel="canonical" href="https://travancorerestaurant.com/" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Travancore Restaurant",
+      "image": "https://travancorerestaurant.com/restaurantlogo.png",
+      "url": "https://travancorerestaurant.com/",
+      "telephone": "+97124418608",
+      "servesCuisine": ["Indian", "Arabic", "Chinese", "Continental"],
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ghayathy Mall, Al Ruways",
+        "addressLocality": "Abu Dhabi",
+        "addressCountry": "UAE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 23.9109596,
+        "longitude": 52.8024475
+      }
+    }
+  </script>
 
   <style>
     :root {
       --blue: #0a78c9;
-      --blue-dark: #0868af;
-      --gold: #e0a300;
+      --blue-dark: #075d9f;
+      --gold: #d99b00;
       --gold-light: #ffd76a;
       --green: #25d366;
-      --green-dark: #21bf5a;
+      --green-dark: #1fb858;
       --text: #222;
       --text-soft: #666;
       --white: #ffffff;
-      --bg: #f7f3ec;
+      --bg: #f8f4ed;
       --border: #eadfcb;
       --shadow: 0 16px 34px rgba(0, 0, 0, 0.06);
       --radius: 24px;
-      --transition: 0.28s ease;
+      --transition: 0.3s ease;
     }
 
     * {
@@ -80,7 +122,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(255, 255, 255, 0.86);
+      background: rgba(255, 255, 255, 0.88);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border-bottom: 1px solid rgba(255, 255, 255, 0.55);
@@ -107,10 +149,6 @@
       height: auto;
       object-fit: contain;
       flex-shrink: 0;
-      border-radius: 0;
-      background: transparent;
-      border: none;
-      box-shadow: none;
     }
 
     .logo-text h1 {
@@ -177,12 +215,12 @@
 
     .hero {
       position: relative;
-      min-height: 92vh;
+      min-height: 95vh;
       display: flex;
       align-items: center;
       color: var(--white);
       background:
-        linear-gradient(to right, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.40)),
+        linear-gradient(to right, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.42)),
         url("restaurant-bg.jpg") center/cover no-repeat;
     }
 
@@ -191,28 +229,28 @@
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(circle at top left, rgba(10, 120, 201, 0.22), transparent 35%),
-        radial-gradient(circle at bottom right, rgba(224, 163, 0, 0.18), transparent 30%);
+        radial-gradient(circle at top left, rgba(10, 120, 201, 0.24), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(224, 163, 0, 0.16), transparent 30%);
       pointer-events: none;
     }
 
     .hero-content {
       position: relative;
       z-index: 1;
-      max-width: 790px;
-      padding: 100px 0;
+      max-width: 840px;
+      padding: 110px 0;
       animation: fadeUp 0.8s ease;
     }
 
     .hero-badge {
       display: inline-block;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
       padding: 10px 18px;
       border-radius: 999px;
       background: rgba(255, 255, 255, 0.12);
       border: 1px solid rgba(255, 255, 255, 0.28);
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
       box-shadow: 0 8px 20px rgba(255, 255, 255, 0.08);
       font-size: 14px;
       font-weight: 700;
@@ -220,8 +258,8 @@
 
     .hero h2 {
       margin-bottom: 18px;
-      font-size: 62px;
-      line-height: 1.03;
+      font-size: 64px;
+      line-height: 1.05;
       letter-spacing: -1px;
       font-weight: 800;
       text-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
@@ -232,8 +270,8 @@
     }
 
     .hero p {
-      max-width: 720px;
-      margin-bottom: 26px;
+      max-width: 760px;
+      margin-bottom: 28px;
       font-size: 21px;
       color: #f2f2f2;
       opacity: 0.96;
@@ -244,7 +282,7 @@
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
-      margin-bottom: 30px;
+      margin-bottom: 32px;
     }
 
     .hero-points span {
@@ -256,7 +294,7 @@
       font-weight: 700;
       backdrop-filter: blur(6px);
       -webkit-backdrop-filter: blur(6px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.10);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     }
 
     .btn-group {
@@ -311,29 +349,11 @@
       box-shadow: 0 10px 24px rgba(37, 211, 102, 0.35);
     }
 
-    .btn-green:hover {
-      box-shadow:
-        0 0 18px rgba(37, 211, 102, 0.6),
-        0 18px 32px rgba(37, 211, 102, 0.45);
-    }
-
     .btn-blue {
       background: #0a78c9;
-      color: #ffffff !important;
+      color: #fff !important;
       border: 2px solid #0868af;
       box-shadow: 0 10px 22px rgba(10, 120, 201, 0.35);
-    }
-
-    .btn-blue,
-    .btn-blue * {
-      color: #fff !important;
-    }
-
-    .btn-blue:hover {
-      background: #0868af;
-      box-shadow:
-        0 0 12px rgba(10, 120, 201, 0.6),
-        0 16px 30px rgba(10, 120, 201, 0.45);
     }
 
     .btn-gold {
@@ -343,14 +363,8 @@
       box-shadow: 0 12px 24px rgba(224, 163, 0, 0.28);
     }
 
-    .btn-gold:hover {
-      box-shadow:
-        0 0 18px rgba(224, 163, 0, 0.6),
-        0 18px 32px rgba(224, 163, 0, 0.42);
-    }
-
     .btn-outline-blue {
-      background: rgba(255, 255, 255, 0.10);
+      background: rgba(255, 255, 255, 0.1);
       color: #fff !important;
       border: 2px solid rgba(255, 255, 255, 0.55);
       backdrop-filter: blur(8px);
@@ -358,11 +372,13 @@
       box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
     }
 
+    .btn-blue:hover {
+      background: var(--blue-dark);
+    }
+
     .btn-outline-blue:hover {
       background: var(--blue);
-      color: #fff !important;
       border-color: var(--blue);
-      box-shadow: 0 18px 30px rgba(10, 120, 201, 0.34);
     }
 
     section {
@@ -387,10 +403,16 @@
     }
 
     .section-title p {
-      max-width: 760px;
+      max-width: 780px;
       margin: auto;
       color: var(--text-soft);
       font-size: 16px;
+    }
+
+    .seo-line {
+      margin-top: 18px;
+      font-size: 14px;
+      color: #7a7a7a;
     }
 
     .about-grid,
@@ -402,7 +424,7 @@
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.88);
+      background: rgba(255, 255, 255, 0.9);
       border: 1px solid rgba(234, 223, 203, 0.95);
       border-radius: var(--radius);
       padding: 32px;
@@ -422,7 +444,39 @@
     .card h4 {
       font-size: 26px;
       color: var(--blue);
-      margin-bottom: 14px;
+      margin-bottom: 16px;
+    }
+
+    .why-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 8px;
+    }
+
+    .why-list li {
+      background: #fafafa;
+      margin-bottom: 12px;
+      padding: 13px 16px;
+      border-radius: 14px;
+      font-weight: 600;
+      color: #333;
+      border-left: 4px solid var(--blue);
+      transition: var(--transition);
+    }
+
+    .why-list li:hover {
+      background: #eef6fd;
+      transform: translateX(4px);
+    }
+
+    .info-box p {
+      background: #fff;
+      padding: 11px 14px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      border: 1px solid #eee;
+      font-weight: 500;
+      color: #444;
     }
 
     .features {
@@ -433,7 +487,7 @@
     }
 
     .feature-box {
-      background: rgba(255, 255, 255, 0.90);
+      background: rgba(255, 255, 255, 0.92);
       border: 1px solid var(--border);
       border-radius: 18px;
       padding: 22px;
@@ -465,7 +519,7 @@
       border-radius: 20px;
       padding: 24px;
       text-align: center;
-      box-shadow: 0 14px 26px rgba(224, 163, 0, 0.10);
+      box-shadow: 0 14px 26px rgba(224, 163, 0, 0.1);
     }
 
     .highlight-strip strong {
@@ -483,7 +537,7 @@
     .special-card {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      background: rgba(255, 255, 255, 0.92);
+      background: rgba(255, 255, 255, 0.94);
       border: 1px solid var(--border);
       border-radius: 24px;
       overflow: hidden;
@@ -597,7 +651,6 @@
       font-size: 24px;
       letter-spacing: 2px;
       margin-bottom: 8px;
-      text-shadow: 0 0 10px rgba(244, 180, 0, 0.18);
     }
 
     .review-box p {
@@ -639,7 +692,6 @@
 
     .floating-whatsapp:hover {
       transform: translateY(-3px) scale(1.04);
-      box-shadow: 0 20px 34px rgba(37, 211, 102, 0.45);
     }
 
     .floating-whatsapp::after {
@@ -672,7 +724,7 @@
       }
 
       .hero h2 {
-        font-size: 46px;
+        font-size: 48px;
       }
 
       .special-card {
@@ -708,7 +760,7 @@
       }
 
       .hero h2 {
-        font-size: 34px;
+        font-size: 36px;
       }
 
       .hero p {
@@ -766,7 +818,7 @@
       }
 
       .hero-content {
-        padding: 70px 0;
+        padding: 72px 0;
       }
 
       .hero h2 {
@@ -811,7 +863,7 @@
         <img src="restaurantlogo.png" alt="Travancore Restaurant Logo" />
         <div class="logo-text">
           <h1><span class="blue">Travancore</span> <span class="yellow">Restaurant</span></h1>
-          <p>Gayathy Mall, Al Ruways, Abu Dhabi, UAE</p>
+          <p>Ghayathy Mall, Al Ruways, Abu Dhabi, UAE</p>
         </div>
       </div>
 
@@ -840,26 +892,26 @@
     <section class="hero" id="home">
       <div class="container">
         <div class="hero-content">
-          <div class="hero-badge">Welcome to Travancore Restaurant</div>
+          <div class="hero-badge">Premium Dining Experience in Ghayathy, Al Ruways</div>
 
           <h2>
-            Delicious Food –
-            <span class="yellow">Indian, Arabic, Chinese</span> &
-            Continental
+            Experience <span class="yellow">Authentic Flavors</span><br />
+            at Travancore Restaurant
           </h2>
 
           <p>
-            Enjoy delicious Indian, Arabic, Chinese and Continental dishes with
-            family dining, takeaway, party orders and fast home delivery.
+            Discover premium Indian, Arabic, Chinese and Continental cuisine with
+            quality ingredients, warm hospitality, family dining, takeaway,
+            party orders and fast home delivery in Al Ruways, Abu Dhabi.
           </p>
 
           <div class="hero-points">
-            <span>Indian Food</span>
-            <span>Arabic Food</span>
-            <span>Chinese Food</span>
-            <span>Continental</span>
+            <span>Premium Quality</span>
+            <span>Family Dining</span>
+            <span>Takeaway</span>
+            <span>Fast Delivery</span>
             <span>Party Orders</span>
-            <span>Home Delivery</span>
+            <span>Near You</span>
           </div>
 
           <div class="btn-group">
@@ -869,11 +921,11 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              WhatsApp Now
+              Order on WhatsApp
             </a>
 
             <a class="btn btn-blue" href="tel:+97124418608">
-              Call Restaurant
+              Call Now
             </a>
 
             <a class="btn btn-gold" href="#specials">
@@ -898,28 +950,34 @@
         <div class="section-title">
           <h3><span>About</span> Travancore Restaurant</h3>
           <p>
-            Travancore Restaurant offers quality Indian, Arabic, Chinese and Continental food
-            with good taste, neat service and a clean family-friendly atmosphere.
+            Travancore Restaurant is a trusted dining destination in Ghayathy Mall,
+            Al Ruways, Abu Dhabi, serving delicious Indian, Arabic, Chinese and
+            Continental food in a clean, welcoming and family-friendly atmosphere.
           </p>
+          <div class="seo-line">
+            Located in Ghayathy Mall, Al Ruways, Abu Dhabi — Travancore Restaurant serves Indian, Arabic, Chinese and Continental food for dine-in, takeaway and home delivery.
+          </div>
         </div>
 
         <div class="about-grid">
           <div class="card">
             <h4>Why Choose Us</h4>
-            <p>
-              Fresh food, neat service, family dining, takeaway, party orders and
-              quick home delivery. We serve popular dishes loved by customers in
-              Al Ruways and nearby areas.
-            </p>
+            <ul class="why-list">
+              <li>Freshly prepared food with authentic taste</li>
+              <li>Clean and hygienic kitchen and dining experience</li>
+              <li>Fast service for dine-in, takeaway and delivery</li>
+              <li>Family-friendly atmosphere with customer comfort</li>
+              <li>Popular dishes loved by customers in Ghayathy and nearby areas</li>
+            </ul>
           </div>
 
           <div class="card">
             <h4>Restaurant Information</h4>
-            <div class="contact-info">
+            <div class="contact-info info-box">
               <p><strong>Name:</strong> Travancore Restaurant</p>
               <p><strong>Food:</strong> Indian, Arabic, Chinese & Continental</p>
               <p><strong>Service:</strong> Dine-in, Takeaway, Party Orders, Home Delivery</p>
-              <p><strong>Location:</strong> Gayathy Mall, Al Ruways, Abu Dhabi, UAE</p>
+              <p><strong>Location:</strong> Ghayathy Mall, Al Ruways, Abu Dhabi, UAE</p>
             </div>
           </div>
         </div>
@@ -931,33 +989,33 @@
         <div class="section-title">
           <h3><span>Restaurant</span> Highlights</h3>
           <p>
-            Professional food focus with customer favorites, quality service and fast ordering support.
+            Quality food, customer favorites, fast ordering support and a premium dining feel for every guest.
           </p>
         </div>
 
         <div class="features">
           <div class="feature-box">
             <h5>Indian Dishes</h5>
-            <p>Traditional Indian food and customer favorite meals.</p>
+            <p>Traditional Indian meals prepared with rich flavor and quality ingredients.</p>
           </div>
           <div class="feature-box">
             <h5>Arabic Specials</h5>
-            <p>Arabic-style grill, shawarma and hot favorite dishes.</p>
+            <p>Arabic-style grill, shawarma and favorite hot dishes loved by customers.</p>
           </div>
           <div class="feature-box">
             <h5>Chinese Favorites</h5>
-            <p>Popular Chinese dishes loved by dine-in and takeaway customers.</p>
+            <p>Popular Chinese dishes for dine-in, takeaway and family food orders.</p>
           </div>
           <div class="feature-box">
             <h5>Delivery & Orders</h5>
-            <p>Takeaway, WhatsApp orders, party orders and home delivery.</p>
+            <p>Quick takeaway, WhatsApp orders, party catering and home delivery service.</p>
           </div>
         </div>
 
         <div class="highlight-strip">
           <strong>Travancore Restaurant</strong>
-          Gayathy Mall, Al Ruways, Abu Dhabi, UAE |
-          Indian | Arabic | Chinese | Continental | Takeaway | Party Orders | Home Delivery
+          Ghayathy Mall, Al Ruways, Abu Dhabi, UAE |
+          Indian | Arabic | Chinese | Continental | Dine-in | Takeaway | Party Orders | Home Delivery
         </div>
       </div>
     </section>
@@ -967,7 +1025,7 @@
         <div class="section-title">
           <h3><span>Special</span> Food Highlights</h3>
           <p>
-            Attractive one-page food showcase with clear cards and professional presentation.
+            Signature dishes and customer favorites presented in a clean and attractive premium style.
           </p>
         </div>
 
@@ -979,7 +1037,7 @@
             <div class="special-text">
               <span class="special-badge">Popular Section</span>
               <h4><span>Indian</span> Food Specials</h4>
-              <p>Traditional Indian-style meals and customer favorite dishes.</p>
+              <p>Traditional Indian meals and signature dishes loved by families and regular customers.</p>
               <ul>
                 <li>Indian Thali</li>
                 <li>Special meals</li>
@@ -996,7 +1054,7 @@
             <div class="special-text">
               <span class="special-badge">Best Seller</span>
               <h4><span>Biriyani</span> Specials</h4>
-              <p>Rich aroma, premium rice and signature restaurant flavor.</p>
+              <p>Rich aroma, premium rice and signature restaurant flavor in every serving.</p>
               <ul>
                 <li>Chicken Biriyani</li>
                 <li>Mutton Biriyani</li>
@@ -1013,7 +1071,7 @@
             <div class="special-text">
               <span class="special-badge">Hot & Tasty</span>
               <h4><span>Chinese</span> Favorites</h4>
-              <p>Popular dishes loved by dine-in and takeaway customers.</p>
+              <p>Popular Chinese dishes enjoyed by dine-in guests and takeaway customers.</p>
               <ul>
                 <li>Fried Rice</li>
                 <li>Noodles</li>
@@ -1030,7 +1088,7 @@
             <div class="special-text">
               <span class="special-badge">Refreshing Drinks</span>
               <h4><span>Fresh</span> Juices</h4>
-              <p>Freshly prepared cool drinks for every meal and every season.</p>
+              <p>Freshly prepared cool drinks for every meal, every mood and every season.</p>
               <ul>
                 <li>Mango</li>
                 <li>Orange</li>
@@ -1047,7 +1105,7 @@
             <div class="special-text">
               <span class="special-badge">Arabic Special</span>
               <h4><span>Arabic</span> Food Favorites</h4>
-              <p>Arabic-style grilled dishes and customer favorites.</p>
+              <p>Arabic-style grilled dishes and customer favorite specials with bold taste.</p>
               <ul>
                 <li>Shawarma</li>
                 <li>Shawayi Chicken</li>
@@ -1064,7 +1122,7 @@
             <div class="special-text">
               <span class="special-badge">More Specials</span>
               <h4><span>Continental</span> & Breakfast</h4>
-              <p>More tasty items for morning service and all-day dining.</p>
+              <p>Tasty breakfast and all-day dining choices for families, workers and visitors.</p>
               <ul>
                 <li>Breakfast specials</li>
                 <li>Dosa & Idli items</li>
@@ -1082,7 +1140,7 @@
         <div class="section-title">
           <h3><span>Contact</span> & Location</h3>
           <p>
-            Visit, call, WhatsApp or find us easily on Google Maps.
+            Visit us, call us, order on WhatsApp or find us quickly on Google Maps.
           </p>
         </div>
 
@@ -1090,7 +1148,7 @@
           <div class="card contact-info">
             <h4>Contact Details</h4>
 
-            <p><strong>Address:</strong> Gayathy Mall, Al Ruways, Abu Dhabi, UAE</p>
+            <p><strong>Address:</strong> Ghayathy Mall, Al Ruways, Abu Dhabi, UAE</p>
             <p><strong>Phone:</strong> <a href="tel:+97124418608">+971 24 418 608</a></p>
             <p>
               <strong>WhatsApp:</strong>
